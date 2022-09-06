@@ -1,1 +1,21 @@
-
+  body{
+    text-align: center;
+  }
+  .bg img{
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%; 
+    opacity: 0.8; 
+    image-resolution: 300dpi; 
+  }
+  .game-title{
+    color: rgb(69, 69, 69);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50PX;
+    margin: 40px;
+    position: absolute;
+    margin-left: 33%;
+    margin-right: 33%; 
+}
