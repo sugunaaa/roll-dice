@@ -22,7 +22,7 @@
   width: 100px;
   height: 100px;
   perspective: 600px;
-  margin: 20% 25%;  
+  margin: 10% 25%;  
 }
 
 .cube1 {
@@ -93,6 +93,17 @@
   position: relative;
   margin: 35px 20px;
   transform: rotateY(  20deg) translateZ(50px);
+}
+.sum
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: azure;
+
+}
+.roll-button{
+  position: relative;
+  cursor: pointer;
+  border-color: white;
 }
 /* .cube.show-front  { transform: translateZ(-100px) rotateY(   0deg); }
 .cube.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
