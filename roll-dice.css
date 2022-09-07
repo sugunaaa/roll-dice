@@ -1,5 +1,6 @@
   body{
     text-align: center;
+    background-color: rgb(71, 72, 62);
   }
     .bg img{
     position: fixed; 
@@ -7,7 +8,7 @@
     left: -50%; 
     width: 200%; 
     height: 200%; 
-    opacity: 0.8; 
+    opacity: 0.5; 
     image-resolution: 300dpi; 
     z-index: -1; 
   } 
@@ -76,11 +77,12 @@
 }
 
 .cube2 {
-  position: relative;
+  position: absolute;
   transform-style: preserve-3d;
   background-color: rgb(210, 232, 208); 
   border-radius: 10%;
   border: 1px black;
+  margin: 200px -50px;
 }
 .dot {
   width: 20px;
@@ -98,12 +100,14 @@
 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: azure;
-
+  text-align: center;
+  margin: 30px;
 }
 .roll-button{
-  position: relative;
+  position: absolute;
   cursor: pointer;
   border-color: white;
+  align-items: center;
 }
 /* .cube.show-front  { transform: translateZ(-100px) rotateY(   0deg); }
 .cube.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
