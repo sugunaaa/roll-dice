@@ -1,7 +1,7 @@
   body{
     text-align: center;
   }
-   .bg img{
+    .bg img{
     position: fixed; 
     top: -50%; 
     left: -50%; 
@@ -9,7 +9,7 @@
     height: 200%; 
     opacity: 0.8; 
     image-resolution: 300dpi; 
-    z-index: -1;
+    z-index: -1; 
   } 
   .game-title{
     color: rgb(210, 232, 208);
@@ -18,39 +18,86 @@
     margin: 40px;
     text-align: center;
 }
-.cube {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-style: preserve-3d;
-    transform: rotateX(240deg) rotateY(-5deg) rotateZ(-155deg);
+.scene1 {
+  width: 100px;
+  height: 100px;
+  perspective: 600px;
+  margin: 20% 25%;  
+}
+
+.cube1 {
+  position: relative;
+  transform-style: preserve-3d;
+  background-color: rgb(210, 232, 208); 
+  border-radius: 10%;
+  border: 1px black;
+}
+
+.cube__face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(210, 232, 208); 
+  transform-style: preserve-3d;
+  border-radius: 10%;
+  border: 1px black;
+}
+.cube__face--front  { 
+  transform: rotateY(  20deg) translateZ(50px);
+  background-color: rgb(255, 255, 255);
+ }
+.cube__face--right  { 
+  transform: rotateY( 110deg) translateZ(50px);
+  background-color: rgb(255, 255, 255);
+}
+.cube__face--back   { 
+  transform: rotateY(200deg) translateZ(50px); 
+  background-color:rgb(255, 255, 255);
+}
+.cube__face--left   { 
+  transform: rotateY(-70deg) translateZ(50px);
+  background-color:rgb(255, 255, 255);
+}
+.cube__face--top    {
+   transform: rotateX( 90deg) rotateZ(-20deg) translateZ(50px); 
+   background-color:rgb(255, 255, 255);
   }
-  
-  .side {
-    width: 10%;
-    height: 10%;
-    top: 50;
-    left: 50;
-    position:absolute;
-    border-radius: 10%;
+.cube__face--bottom {
+   transform: rotateX(-90deg) rotateZ(20deg) translateZ(50px); 
+   background-color:rgb(255, 255, 255);
   }
-  
-  .top {
-    transform: translateZ(-60px);
-    background: rgb(215, 236, 213);
-  }
-  
-  .front {
-    transform: rotateX(90deg);
-    transform-origin: bottom;
-    background: rgb(215, 236, 213);
-  }
-  
-  .left {
-    width: 60px;
-    transform: translateZ(-60px) rotateY(90deg);
-    transform-origin: right;
-    background: rgb(215, 236, 213);
-  }
+.cube1 { transform: translateZ(-100px); }
+
+.scene2 {
+  width: 100px;
+  height: 100px;
+  perspective: 600px;
+  margin: -35% 60%;  
+}
+
+.cube2 {
+  position: relative;
+  transform-style: preserve-3d;
+  background-color: rgb(210, 232, 208); 
+  border-radius: 10%;
+  border: 1px black;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.one{
+  position: relative;
+  margin: 35px 20px;
+  transform: rotateY(  20deg) translateZ(50px);
+}
+/* .cube.show-front  { transform: translateZ(-100px) rotateY(   0deg); }
+.cube.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
+.cube.show-back   { transform: translateZ(-100px) rotateY(-180deg); }
+.cube.show-left   { transform: translateZ(-100px) rotateY(  90deg); }
+.cube.show-top    { transform: translateZ(-100px) rotateX( -90deg); }
+.cube.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }
+.cube { transition: transform 1s; } */
