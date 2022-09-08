@@ -19,7 +19,7 @@
     margin: 40px;
     text-align: center;
 }
-/* .scene1 {
+ .scene1 {
   width: 100px;
   height: 100px;
   perspective: 600px;
@@ -95,8 +95,8 @@
   position: relative;
   margin: 35px 20px;
   transform: rotateY(  20deg) translateZ(50px);
-} */
-.scene {
+} 
+/* .scene {
   display: flex;
   background-color: blue;
   border: none;
@@ -111,42 +111,43 @@
   border: 1px black;
   align-self: center;
 }
-.cube2 {
+/* .cube2 {
   transform-style: preserve-3d;
   background-color: rgb(210, 232, 208); 
   border: 1px black;
-  margin: 50px;
-}
-.scene>.cube1>.cube__face {
-  position: absolute; 
+  margin: 50px; 
+}*/
+.scene>.cube1>.cube__face { 
+  position: fixed;
   width: 100px;
   height: 100px;
-  background-color: rgb(210, 232, 208); 
+  background-color: rgb(160, 44, 114); 
   transform-style: preserve-3d;
   border-radius: 5%;
+  transform-style: preserve-3d;
 }
-.scene>.cube1>.cube__face--front  { 
+.scene>.cube1>.cube__face>.cube__face--front  { 
   transform: rotateY(  20deg) translateZ(50px);
   background-color: rgb(179, 194, 21);
   align-items: center;
  }
- .scene>.cube1>.cube__face--right  { 
+ .scene>.cube1>.cube__face>.cube__face--right  { 
   transform: rotateY( 110deg) translateZ(50px);
   background-color: rgb(23, 239, 26);
 }
-.scene>.cube1>.cube__face--back   { 
+.scene>.cube1>.cube__face>.cube__face--back   { 
   transform: rotateY(200deg) translateZ(50px); 
   background-color:rgb(41, 73, 119);
 }
-.scene>.cube1>.cube__face--left   { 
+.scene>.cube1>.cube__face>.cube__face--left   { 
   transform: rotateY(-70deg) translateZ(50px);
   background-color:rgba(68, 155, 94, 0.61);
 }
-.scene>.cube1>.cube__face--top    {
+.scene>.cube1>.cube__face>.cube__face--top    {
    transform: rotateX( 90deg) rotateZ(-20deg) translateZ(50px); 
    background-color:rgb(244, 5, 5);
   }
-.scene>.cube1>.cube__face--bottom {
+.scene>.cube1>.cube__face>.cube__face--bottom {
    transform: rotateX(-90deg) rotateZ(20deg) translateZ(50px); 
    background-color:rgb(112, 46, 46);
   }
@@ -166,7 +167,7 @@
 .six{
   position: relative;
   margin: ;
-}
+} */
 
 
 /* .sum
