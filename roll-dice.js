@@ -1,12 +1,15 @@
-var cube = document.getElementById('btn');
+var btn = document.getElementById('btn');
+var cube1=document.getElementById('çube1');
+var cube2=document.getElementById('çube2');
 
 var min = 1;
 var max = 24;
 
-cube.onclick = function() {
+btn.onclick = function() {
   var xRand = getRandom(max, min);
   var yRand = getRandom(max, min);
-  cube.style.transform = 'rotateX('+xRand+'deg) rotateY('+yRand+'deg)';
+  cube1.style.transform = 'rotateX('+xRand+'deg) rotateY('+yRand+'deg)';
+  cube2.style.transform = 'rotateX('+xRand+'deg) rotateY('+yRand+'deg)';
 }
 
 function getRandom(max, min) {
