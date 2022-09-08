@@ -218,7 +218,7 @@
 .bottom .dot5 { top: 70px; left: 45px; }
 .bottom .dot6 { top: 70px; left: 70px; }
 
-.btn{
+#btn{
   cursor: pointer;
   position:relative;
   top: -120px;
@@ -231,6 +231,9 @@
   color: white;
   border-radius: 30%;
   font-weight: bolder;
+}
+#btn:hover{
+  background-color: rgb(77, 74, 74);
 }
 .sum{
   top: -300px;
