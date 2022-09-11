@@ -34,5 +34,4 @@ function disp_sum(xRand1,yRand1,xRand2,yRand2)
     {
         rotx1-=4;
     }
-        
 }
