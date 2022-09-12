@@ -1,37 +1,34 @@
 var btn = document.getElementById('btn');
-var cube1=document.getElementById('cube1');
-var cube2=document.getElementById('cube2');
+var cube1=document.querySelector('.cube1');
+var cube2=document.querySelector('.cube2');
+var sum_disp=document.querySelector('.sum')
+var currentClass1 = '';
+var currentClass2 = '';
 
-var min = 1;
-var max = 10;
-
-btn.onclick=function() {
-        var xRand1 = getRandom(max, min);
-        var yRand1 = getRandom(max, min);
-        var xRand2 = getRandom(max, min);
-        var yRand2 = getRandom(max, min);
-        console.log("xRand1 = ",xRand1);
-        console.log("yRand1 = ",yRand1);
-        console.log("xRand2 = ",xRand2);
-        console.log("yRand2 = ",yRand2);
-        cube1.style.transform = `rotateX(${xRand1}deg) rotateY(${yRand1}deg)`;
-        cube2.style.transform = `rotateX(${xRand2}deg) rotateY(${yRand2}deg)`;
-        disp_sum(xRand1,yRand1,xRand2,yRand2);
-    }
-
-function getRandom(max, min) {
-  var rotate_deg=(Math.floor(Math.random() * (max-min)) + min) * 90;
- // console.log(rotate_deg);
-
-  return rotate_deg;
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); 
 }
-function disp_sum(xRand1,yRand1,xRand2,yRand2)
-{
-    var value1 = 1;
-    var value2 = 1;
-    var rotx1=(xRand1/90);
-    if(rotx1>=4)
-    {
-        rotx1-=4;
-    }
+
+function rollDice() {
+  var randNum1 =getRandomInt(1,7); 
+  console.log(randNum1 )
+  var randNum2 =getRandomInt(1,7); 
+  console.log(randNum2 )
+
+  var showClass1 = 'show-' + randNum1;
+  console.log(showClass1)
+  var showClass2 = 'show-' + randNum2;
+  console.log(showClass2)
+  if ( currentClass1 ) {
+    cube1.classList.remove( currentClass1 );
+    cube2.classList.remove( currentClass2);
+  }
+  cube1.classList.add( showClass1);
+  currentClass1 = showClass1;
+  cube2.classList.add( showClass2);
+  currentClass2 = showClass2;
+  sum_disp.innerHTML='The sum is '+(randNum1+randNum2);
 }
+btn.addEventListener("click", rollDice);

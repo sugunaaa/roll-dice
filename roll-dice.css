@@ -19,42 +19,6 @@
     margin: 40px;
     text-align: center;
 }
-
-#cube1 .one {
-  transform: 
-    translateZ(50px);
-}
-
-#cube1 .two {
-  transform: 
-    rotateX(-180deg)
-    translateZ(50px);
-}
-
-#cube1 .three {
-  transform:
-    rotateY(90deg)
-    translateZ(50px);
-}
-
-#cube1 .four {
-  transform:
-    rotateY(-90deg)
-    translateZ(50px);
-}
-
-#cube1 .five {
-  transform:
-    rotateX(90deg)
-    translateZ(50px);
-}
-
-#cube1 .six {
-  transform:
-    rotateX(-90deg)
-    translateZ(50px);
-}
-
 .container1 {
   width: 200px;
   height: 200px;
@@ -73,30 +37,58 @@
   perspective: 1000px;
   perspective-origin: 250% -100%;
 }
-
-#cube1 {
+.cube1 {
   width: 100%;
   height: 100%;
-  top: -10px;
+  top: 85px;
   left: -100px;
   position: absolute;
   transform-style: preserve-3d;
+  transform: translateZ(0px);
   transition: transform 3s;
 }
-
-#cube1 div {
+.cube1 div {
   background: hsla(0, 0%, 100%, 0.8);
   display: block;
   position: absolute;
   width: 100px;
   border: 2px solid #000000;
-  
   margin: 0 auto;  
-  
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 5%;
-  text-align: center;
   padding: 50px 0;
+}
+.cube1 .one {
+  transform: 
+    translateZ(50px);
+}
+
+.cube1 .two {
+  transform: 
+    rotateX(-180deg)
+    translateZ(50px);
+}
+
+.cube1 .three {
+  transform:
+    rotateY(90deg)
+    translateZ(50px);
+}
+
+.cube1 .four {
+  transform:
+    rotateY(-90deg)
+    translateZ(50px);
+}
+
+.cube1 .five {
+  transform:
+    rotateX(90deg)
+    translateZ(50px);
+}
+
+.cube1 .six {
+  transform:
+    rotateX(-90deg)
+    translateZ(50px);
 }
 
 .dot {
@@ -130,66 +122,60 @@
 .six .dot5 { top: 70px; left: 45px; }
 .six .dot6 { top: 70px; left: 70px; }
 
-#cube2 .one {
-  transform: 
-    translateZ(50px);
-}
-
-#cube2 .two {
-  transform: 
-    rotateX(-180deg)
-    translateZ(50px);
-}
-
-#cube2 .three {
-  transform:
-    rotateY(90deg)
-    translateZ(50px);
-}
-
-#cube2 .four {
-  transform:
-    rotateY(-90deg)
-    translateZ(50px);
-}
-
-#cube2 .five {
-  transform:
-    rotateX(90deg)
-    translateZ(50px);
-}
-
-#cube2 .six {
-  transform:
-    rotateX(-90deg)
-    translateZ(50px);
-}
-
-#cube2 {
+.cube2 {
   width: 100%;
   height: 100%;
-  top: -250px;
+  top: -155px;
   left: 200px;
   position: absolute;
-  
   transform-style: preserve-3d;
-  
+  transform: translateZ(0px);
   transition: transform 3s;
 }
 
-#cube2 div {
+.cube2 div {
   background: hsla(0, 0%, 100%, 0.8);
   display: block;
   position: absolute;
   width: 100px;
   border: 2px solid #000000;
-  
   margin: 0 auto;  
-  
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 5%;
-  text-align: center;
   padding: 50px 0;
+}
+
+.cube2 .one {
+  transform: 
+    translateZ(50px);
+}
+
+.cube2 .two {
+  transform: 
+    rotateX(-180deg)
+    translateZ(50px);
+}
+
+.cube2 .three {
+  transform:
+    rotateY(90deg)
+    translateZ(50px);
+}
+
+.cube2 .four {
+  transform:
+    rotateY(-90deg)
+    translateZ(50px);
+}
+
+.cube2 .five {
+  transform:
+    rotateX(90deg)
+    translateZ(50px);
+}
+
+.cube2 .six {
+  transform:
+    rotateX(-90deg)
+    translateZ(50px);
 }
 
 .one .dot1 { top: 45px; left: 45px; }
@@ -214,6 +200,20 @@
 .six .dot5 { top: 70px; left: 45px; }
 .six .dot6 { top: 70px; left: 70px; }
 
+.cube1.show-1 { transform: translateZ(-100px) rotateY(   0deg); }
+.cube1.show-2 { transform: translateZ(-100px) rotateY(-180deg); }
+.cube1.show-3 { transform: translateZ(-100px) rotateY( -90deg); }
+.cube1.show-4 { transform: translateZ(-100px) rotateY(  90deg); }
+.cube1.show-5 { transform: translateZ(-100px) rotateX( -90deg); }
+.cube1.show-6 { transform: translateZ(-100px) rotateX(  90deg); }
+
+.cube2.show-1 { transform: translateZ(-100px) rotateY(   0deg); }
+.cube2.show-2 { transform: translateZ(-100px) rotateY(-180deg); }
+.cube2.show-3 { transform: translateZ(-100px) rotateY( -90deg); }
+.cube2.show-4 { transform: translateZ(-100px) rotateY(  90deg); }
+.cube2.show-5 { transform: translateZ(-100px) rotateX( -90deg); }
+.cube2.show-6 { transform: translateZ(-100px) rotateX(  90deg); }
+
 #btn{
   cursor: pointer;
   position:relative;
@@ -237,4 +237,5 @@
   color:rgb(255, 255, 255);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
-}
+} 
+
