@@ -31,7 +31,7 @@ function rollDice() {
   currentClass2 = showClass2;
   setTimeout(function(){
     return sum_disp.innerHTML='The sum is '+(randNum1+randNum2);
-  }, 1500)
+  }, 1000)
   
 }
 btn.addEventListener("click", rollDice);
