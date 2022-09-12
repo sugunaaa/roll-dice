@@ -29,6 +29,9 @@ function rollDice() {
   currentClass1 = showClass1;
   cube2.classList.add( showClass2);
   currentClass2 = showClass2;
-  sum_disp.innerHTML='The sum is '+(randNum1+randNum2);
+  setTimeout(function(){
+    return sum_disp.innerHTML='The sum is '+(randNum1+randNum2);
+  }, 1500)
+  
 }
 btn.addEventListener("click", rollDice);

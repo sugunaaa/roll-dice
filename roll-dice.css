@@ -130,7 +130,7 @@
   position: absolute;
   transform-style: preserve-3d;
   transform: translateZ(0px);
-  transition: transform 3s;
+  transition: transform 1s;
 }
 
 .cube2 div {
